@@ -1,20 +1,20 @@
-const generateMessage = (username,text) =>{
+const generateMessage = (username, text) => {
   return {
-    username,
-    text,
-    createdAt: new Date().getTime()
+      username,
+      text,
+      createdAt: new Date().getTime()
   }
 }
 
-const generateLocationMessage = (username,url) =>{
+const generateLocationMessage = (username, url) => {
   return {
-   username,
-   url:url,
-   createdAt: new Date().getTime()
+      username,
+      url,
+      createdAt: new Date().getTime()
   }
 }
 
 module.exports = {
   generateMessage,
-  generateLocationMessage 
+  generateLocationMessage
 }
